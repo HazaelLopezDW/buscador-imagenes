@@ -7,7 +7,8 @@ class App extends React.Component {
 
   state = {
     termino: "",
-    imagenes: []
+    imagenes: [],
+    pagina: ""
   }
 
   paginaAnterior = () =>{
@@ -29,7 +30,8 @@ class App extends React.Component {
 
   datosBusqueda = (termino) =>{
     this.setState({
-      termino
+      termino: "termino",
+      pagina: 1
     }, () => { this.consultarApi() })
   }
 
