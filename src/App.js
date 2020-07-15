@@ -34,7 +34,7 @@ class App extends React.Component {
             datosBusqueda={this.datosBusqueda}
           />
         </div>
-        <div className="row jsutify-content-center">
+        <div className="row text-center">
           <Resultado
             imagenes={this.state.imagenes}
           />
