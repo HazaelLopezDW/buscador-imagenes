@@ -19,7 +19,10 @@ class Resultado extends React.Component{
                         />
                     ))}
                 </div>
-                <Paginacion/>
+                <Paginacion
+                    paginaAnterior={this.paginaAnterior}
+                    paginaSiguiente={this.paginaSiguiente}
+                />
             </React.Fragment>
         )
     }
