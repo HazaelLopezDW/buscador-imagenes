@@ -1,6 +1,9 @@
 import React from "react"
 
 class Buscador extends React.Component{
+
+    busquedaRef = React.createRef();
+
     render(){
         return(
             <div>
