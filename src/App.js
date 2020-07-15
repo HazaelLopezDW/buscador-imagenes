@@ -34,9 +34,11 @@ class App extends React.Component {
             datosBusqueda={this.datosBusqueda}
           />
         </div>
-        <Resultado
-          imagenes={this.state.imagenes}
-        />
+        <div className="row jsutify-content-center">
+          <Resultado
+            imagenes={this.state.imagenes}
+          />
+        </div>
       </div>
     );
   }
