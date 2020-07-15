@@ -10,6 +10,14 @@ class App extends React.Component {
     imagenes: []
   }
 
+  paginaAnterior = () =>{
+    console.log("Anterior...")
+  }
+
+  paginaSiguiente = () =>{
+    console.log("Siguiente...")
+  }
+
   consultarApi = () =>{
     const termino = this.state.termino;
     const url =  `https://pixabay.com/api/?key=1732750-d45b5378879d1e877cd1d35a6&q=${this.state.termino}&per_page=32`;
@@ -37,6 +45,8 @@ class App extends React.Component {
         <div className="row text-center">
           <Resultado
             imagenes={this.state.imagenes}
+            paginaAnterior={this.paginaAnterior}
+            paginaSiguiente={this.paginaSiguiente}
           />
         </div>
       </div>
