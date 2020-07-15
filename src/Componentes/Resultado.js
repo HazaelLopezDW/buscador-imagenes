@@ -1,5 +1,6 @@
 import React from "react"
 import Imagen from "./Imagen"
+import Paginacion from "./Paginacion";
 
 class Resultado extends React.Component{
     
@@ -18,6 +19,7 @@ class Resultado extends React.Component{
                         />
                     ))}
                 </div>
+                <Paginacion/>
             </React.Fragment>
         )
     }
